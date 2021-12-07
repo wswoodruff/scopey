@@ -9,6 +9,10 @@
     "lib": "lib",
     "test": "test"
   },
+  "bin": {
+    "scopey": "./bin/scopey",
+    "scope": "./bin/scopey"
+  },
   "scripts": {
     "start": "node server",
     "test": "lab -a @hapi/code -L",
@@ -16,8 +20,13 @@
   },
   "dependencies": {
     "@hapi/boom": "9.x.x",
+    "@hapi/bossy": "^5.1.0",
+    "@hapi/bounce": "^2.0.0",
     "@hapipal/haute-couture": "4.x.x",
-    "joi": "17.x.x"
+    "enquirer": "^2.3.6",
+    "joi": "17.x.x",
+    "mkdirp": "^1.0.4",
+    "supports-color": "^8.1.1"
   },
   "devDependencies": {
     "@hapi/code": "8.x.x",
